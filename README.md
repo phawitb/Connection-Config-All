@@ -6,6 +6,10 @@ python3 -m venv myenv
 source myenv/bin/activate
 ```
 
+### Setup Discord API
+- Right Click > Inspace > Network > Fetch/XHR
+- Request URL, authorization
+
 ### Set up Anydesk
 - Open AnyDesk on your Raspberry Pi
 - Go to Settings > Security > three-line menu (≡) or the gear icon. > Settings > Security
