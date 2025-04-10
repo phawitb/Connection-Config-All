@@ -48,7 +48,7 @@ COM_USER = 'pi'
 SHELL=/bin/sh
 HOME=/home/pi/Documents/Connection-Config-All
 @reboot sleep 15 && ssh -N -R 32097:localhost:22 serveo.net >> /home/pi/serveo.log 2>&1 &
-@reboot sleep 30 && /home/pi/Documents/Connection-Config-All/run_all.sh >> /home/pi/cron_reboot_log2.txt 2>&1
+@reboot sleep 30 && pkill ngrok && /home/pi/Documents/Connection-Config-All/run_all.sh >> /home/pi/cron_reboot_log2.txt 2>&1
 ```
 
 
