@@ -1,22 +1,22 @@
 # Install
-## Install virtualenv (if not already installed)
+### Install virtualenv (if not already installed)
 ```
 sudo apt install python3-venv
 python3 -m venv myenv
 source myenv/bin/activate
 ```
 
-## Set up Anydesk
+### Set up Anydesk
 - Open AnyDesk on your Raspberry Pi
 - Go to Settings > Security > three-line menu (≡) or the gear icon. > Settings > Security
 - Enable “Allow always” or “Unattended Access”
 - Set a strong password in the "Set Password for Unattended Access" section.
 
-## Install ngrok >> install and add token from step in website 
+### Install ngrok >> install and add token from step in website 
 https://dashboard.ngrok.com/signup
 
 
-## Config Serveo
+### Config Serveo
 nano ~/.ssh/config >> add
 ```
 Host serveo.net
@@ -29,7 +29,7 @@ Host serveo.net
 @from remote >> ssh -p 32097 pi@serveo.net
 ```
 
-# Download and run
+## Download and run
 ```
 cd Documents 
 git clone ....
@@ -37,13 +37,13 @@ cd Connection-Config-All
 pip install -r requirements.txt
 ```
 
-## Edit in main.py and in crontab -e
+### Edit in main.py and in crontab -e
 ```
 COMPUTOR = 'RasberryPi5'
 COM_USER = 'pi'
 ```
-## Edit Port Servo in crontab same as main.py
-### crontab -e
+### Edit Port Servo in crontab same as main.py
+#### crontab -e
 ```
 SHELL=/bin/sh
 HOME=/home/pi/Documents/Connection-Config-All
@@ -55,14 +55,14 @@ HOME=/home/pi/Documents/Connection-Config-All
 
 
 
-## Only on Raspberry pi
-### Setup ssh
+### Only on Raspberry pi
+#### Setup ssh
 - sudo raspi-config
 - Go to the Interfaces tab.
 - Find SSH and select Enable.
 - Click OK, then reboot (optional).
 
-### Switching from Wayland to Xorg (X11)
+#### Switching from Wayland to Xorg (X11)
 - sudo raspi-config > Advanced Options > Wayland > Select "X11" to switch from Wayland to the X11 window system.
 - sudo reboot
 
