@@ -7,12 +7,14 @@ import discord
 from discord.ext import commands
 
 # ---------- CONFIG ----------
-COMPUTOR = 'RaspberryPi5'
+# edit ----------------------------
+COMPUTOR = 'RasberryPI5'
 COM_USER = 'pi'
+SERVEO_PORT = '32097'
+DISCORD_TOKEN = "DISCORD_TOKEN"
+# ----------------------------
 JUPYTER_PORT = "4445"
 CHANNEL_NAME = "logservers"
-
-DISCORD_TOKEN = "MTM2MDAzNDI3MDU0NjIzMTQ3Nw.GYG2cv.8l0BpIrWgItV7YS_YIQkERkebqW89dvP6tdxbQ"
 NGROK_CONFIG_PATH = f"/home/{COM_USER}/.config/ngrok/ngrok.yml"
 WORKING_DIR = f"/home/{COM_USER}/Documents"
 # ----------------------------
@@ -104,7 +106,7 @@ async def run_main_program():
 
     msg = (
         f"{COMPUTOR} {'-'*25}\n"
-        f"ssh -p 32097 {COM_USER}@serveo.net \n"
+        f"ssh -p {SERVEO_PORT} {COM_USER}@serveo.net \n"
         f"Anydesk : {anydesk_id}\n"
         f"notebook : \n{jupyter_ngrok_url}\n{jupyter_ngrok_url2}"
         f"\n***change dir jupyter edit in >> sudo nano {WORKING_DIR}/Connection-Config-All/main.py"
