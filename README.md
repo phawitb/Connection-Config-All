@@ -12,6 +12,15 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
+### Edit in main.py and in crontab -e
+```
+COMPUTOR = 'RasberryPi5'
+COM_USER = 'pi'
+SERVEO_PORT = 'xxxx'
+```
+
+
+
 ### Setup Discord API
 - Right Click > Inspace > Network > Fetch/XHR
 - Request URL, authorization
@@ -41,11 +50,7 @@ Host serveo.net
 
 
 
-### Edit in main.py and in crontab -e
-```
-COMPUTOR = 'RasberryPi5'
-COM_USER = 'pi'
-```
+
 ### Edit Port Servo in crontab same as main.py
 #### crontab -e
 ```
