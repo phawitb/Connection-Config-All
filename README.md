@@ -53,7 +53,7 @@ HOME=/home/pi/Documents/Connection-Config-All
 @reboot sleep 30 && /home/pi/Documents/Connection-Config-All/run_all.sh >> /home/pi/cron_reboot_log2.txt 2>&1
 ```
 
-### Only on Raspberry pi
+## Only on Raspberry pi
 #### Setup ssh
 - sudo raspi-config
 - Go to the Interfaces tab.
