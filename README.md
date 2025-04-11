@@ -21,6 +21,9 @@ Host serveo.net
 ### Install ngrok >> install and add token from step in website 
 https://dashboard.ngrok.com/signup
 
+### Setup Discord Bot
+https://discord.com/developers/applications/1360034270546231477/bot
+
 ## Download github and Install virtualenv
 ```
 cd Documents 
@@ -50,26 +53,6 @@ HOME=/home/pi/Documents/Connection-Config-All
 @reboot sleep 30 && /home/pi/Documents/Connection-Config-All/run_all.sh >> /home/pi/cron_reboot_log2.txt 2>&1
 ```
 
-
-
-### Setup Discord API
-- Right Click > Inspace > Network > Fetch/XHR
-- Request URL, authorization
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Only on Raspberry pi
 #### Setup ssh
 - sudo raspi-config
@@ -81,6 +64,11 @@ HOME=/home/pi/Documents/Connection-Config-All
 - sudo raspi-config > Advanced Options > Wayland > Select "X11" to switch from Wayland to the X11 window system.
 - sudo reboot
 
+
+
+### Setup Discord API
+- Right Click > Inspace > Network > Fetch/XHR
+- Request URL, authorization
 
 
 
