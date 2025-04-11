@@ -1,6 +1,7 @@
 # Install
 ### Install virtualenv (if not already installed)
 ```
+cd Connection-Config-All
 sudo apt install python3-venv
 python3 -m venv myenv
 source myenv/bin/activate
