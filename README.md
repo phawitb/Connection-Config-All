@@ -37,7 +37,7 @@ source myenv/bin/activate
 pip install -r requirements.txt
 ```
 
-### Edit in main.py and in crontab -e
+### Edit [PC Name in PATH] >> main.py / run_all.sh / crontab -e
 ```
 COMPUTOR = 'RasberryPi5'
 COM_USER = 'pi'
