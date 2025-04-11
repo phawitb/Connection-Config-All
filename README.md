@@ -1,10 +1,15 @@
 # Install
-### Install virtualenv (if not already installed)
+### Download github and Install virtualenv
 ```
+cd Documents 
+git clone ....
 cd Connection-Config-All
+
 sudo apt install python3-venv
 python3 -m venv myenv
 source myenv/bin/activate
+
+pip install -r requirements.txt
 ```
 
 ### Setup Discord API
@@ -34,13 +39,7 @@ Host serveo.net
 @from remote >> ssh -p 32097 pi@serveo.net
 ```
 
-## Download and run
-```
-cd Documents 
-git clone ....
-cd Connection-Config-All
-pip install -r requirements.txt
-```
+
 
 ### Edit in main.py and in crontab -e
 ```
