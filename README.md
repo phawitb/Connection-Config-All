@@ -16,7 +16,8 @@ pip install -r requirements.txt
 ```
 COMPUTOR = 'RasberryPi5'
 COM_USER = 'pi'
-SERVEO_PORT = 'xxxx'
+SERVEO_PORT = XXXXX
+DISCORD_TOKEN = XXXX  # copy token from >> https://discord.com/developers/applications/1360034270546231477/bot
 ```
 
 
