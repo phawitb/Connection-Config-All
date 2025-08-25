@@ -13,6 +13,8 @@ Host serveo.net
 @from remote >> ssh -p 32097 pi@serveo.net
 ```
 ### Set up Anydesk
+- Download Anydesk from website
+- sudo apt install ./anydesk_file.deb
 - Open AnyDesk on your Raspberry Pi
 - Go to Settings > Security > three-line menu (≡) or the gear icon. > Settings > Security
 - Enable “Allow always” or “Unattended Access”
